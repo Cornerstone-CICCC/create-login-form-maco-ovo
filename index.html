@@ -6,50 +6,76 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./style.css" />
 		<title>Camp-in</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
-		<div class="main main-image">
-			<img src="images/side-image.jpg" alt="mobileImage" />
+		<div class="main">
+			<div class="left">
+				<div class="header">
+					<img src="images/logo.svg" alt="icon" />
+				</div>
+
+				<form id="loginForm">
+					<div class="loginInfo">
+						<div class="title">
+							<img class="logo" src="images/log-in.svg" />
+							<legend class="title">Login</legend>
+						</div>
+						<p>Insert your information below.</p>
+					</div>
+
+					<div class="input-container">
+						<div class="inputEmail">
+							<label>E-mail</label>
+							<div class="input-box">
+								<img src="images/mail.svg" alt="mail icon" />
+								<input type="email" id="email" placeholder="Type your email" />
+							</div>
+						</div>
+
+						<div class="inputPassword">
+							<label>Password</label>
+							<div class="input-box">
+								<img src="images/lock.svg" alt="lock icon" />
+								<input
+									type="email"
+									id="email"
+									placeholder="Type your password"
+								/>
+								<img src="images/eye.svg" alt="eye icon" />
+							</div>
+						</div>
+					</div>
+
+					<div class="row remind-me">
+						<div class="checkbox">
+							<input type="checkbox" />
+							Remind me
+						</div>
+						<a id="forgot-password" href="">Forgot my password</a>
+					</div>
+
+					<div class="row">
+						<button type="submit" class="login-btn">LOGIN</button>
+					</div>
+
+					<div class="row noAccount">
+						<p>Don't have an account?</p>
+						<a id="sign-up" href="">Sign up!</a>
+					</div>
+				</form>
+			</div>
+
+			<div class="right">
+				<img src="images/side-image.jpg" alt="mainImage" />
+			</div>
 		</div>
 
-		<div class="main main-window">
-			<header>
-				<img src="images/favicon.ico" alt="icon" />
-				<p>camp-in</p>
-			</header>
-
-			<form id="loginForm">
-				<div>
-					<legend>Login</legend>
-					<p>Insert your information below.</p>
-				</div>
-
-				<div class="row">
-					<label>E-mail</label>
-					<img src="images/mail.svg" />
-					<p>Type your email</p>
-				</div>
-
-				<div class="row">
-					<label>Password</label>
-					<img src="images/lock.svg" />
-					<p>Type your password</p>
-				</div>
-
-				<div class="row">
-					<label>Remind me</label>
-					<p>Forgot my password</p>
-				</div>
-
-				<div class="row">
-					<label>LOGIN</label>
-				</div>
-
-				<div class="row">
-					<p>Don't have an account?</p>
-					<p>Sign up!</p>
-				</div>
-			</form>
-		</div>
+		<script src="./script.js"></script>
 	</body>
 </html>
