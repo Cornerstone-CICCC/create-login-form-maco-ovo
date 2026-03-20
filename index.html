@@ -47,16 +47,23 @@
 									id="password"
 									placeholder="Type your password"
 								/>
-								<img class="eye-toggle" src="images/eye-slash.svg" alt="toggle password visibility" />
+								<img
+									class="eye-toggle"
+									src="images/eye-slash.svg"
+									alt="toggle password visibility"
+								/>
 							</div>
 						</div>
 					</div>
 
 					<div class="row remind-me">
-						<div class="checkbox">
-							<input type="checkbox" />
-							Remind me
+						<div>
+							<input id="checkbox" type="checkbox" />
+							<label for="checkbox" class="checkbox-custom"></label>
+
+							<span class="remind-me-text">Remind me</span>
 						</div>
+
 						<a id="forgot-password" href="">Forgot my password</a>
 					</div>
 

@@ -137,8 +137,46 @@ label {
 
 /* remind me row */
 .remind-me {
+	display: flex;
+	align-items: center;
+	height: 4rem;
 	justify-content: space-between;
 	padding: 1.5rem 0;
+}
+
+/* Checkbox */
+.remind-me div {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+#checkbox {
+	display: none;
+}
+
+.checkbox-custom {
+	width: 20px;
+	height: 20px;
+	border: 2px solid var(--text-base);
+	border-radius: 3px;
+	background-color: transparent;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+/* .remind-me-text {
+	pointer-events: none; 
+} */
+
+#checkbox:checked + .checkbox-custom {
+	background-color: var(--primary-color);
+	border-color: var(--primary-color);
+	background-image: url("images/check.svg");
+	background-position: center;
+	background-size: 17px;
 }
 
 #forgot-password {
