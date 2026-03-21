@@ -135,7 +135,7 @@ label {
 	display: flex;
 }
 
-/* remind me row */
+/* remind me */
 .remind-me {
 	display: flex;
 	align-items: center;
@@ -166,10 +166,6 @@ label {
 	justify-content: center;
 	cursor: pointer;
 }
-
-/* .remind-me-text {
-	pointer-events: none; 
-} */
 
 #checkbox:checked + .checkbox-custom {
 	background-color: var(--primary-color);
