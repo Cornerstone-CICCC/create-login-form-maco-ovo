@@ -28,18 +28,30 @@ body {
 	height: 100vh;
 }
 .left {
-	/* grid: left; */
+	grid: left;
 	margin: 2rem 3rem;
 }
 
-.right {
-	/* grid: right; */
-	width: 100%;
-	/* min-width: 500px; */
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	min-width: 500px;
 }
-.right img {
+
+.right {
+	grid: right;
 	width: 100%;
 	min-width: 500px;
+}
+
+.right img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
 }
 
 header {
@@ -48,16 +60,22 @@ header {
 	align-items: center;
 
 	min-height: 10vh;
-	margin: 0 auto;
+	/* margin: 0 auto; */
+	margin: 4rem auto;
 }
 
-form {
+/* form {
 	margin: 6rem 2rem;
 	padding: 3rem 6rem;
+} */
+
+form {
+	margin: 4rem 0;
+	padding: 3rem 10%;
+	max-width: 500px;
 	background-color: var(--form-background);
 	border-radius: 4px;
-
-	min-width: 500px;
+	width: 100%;
 }
 /* Login Info */
 
@@ -228,11 +246,14 @@ label {
 
 	.left {
 		margin: 1rem;
+		justify-content: center;
+		align-items: center;
 	}
 
 	form {
 		margin: 2rem 0;
 		padding: 2rem 1.5rem;
 		background-color: var(--background);
+		width: 100%;
 	}
 }

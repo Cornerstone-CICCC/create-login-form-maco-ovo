@@ -19,63 +19,68 @@
 				<div class="header">
 					<img src="images/logo.svg" alt="icon" />
 				</div>
-
-				<form id="loginForm">
-					<div class="loginInfo">
-						<div class="title">
-							<img class="logo" src="images/log-in.svg" />
-							<legend class="title">Login</legend>
+				<div class="container">
+					<form id="loginForm">
+						<div class="loginInfo">
+							<div class="title">
+								<img class="logo" src="images/log-in.svg" />
+								<legend class="title">Login</legend>
+							</div>
+							<p>Insert your information below.</p>
 						</div>
-						<p>Insert your information below.</p>
-					</div>
 
-					<div class="input-container">
-						<div class="inputEmail">
-							<label>E-mail</label>
-							<div class="input-box">
-								<img src="images/mail.svg" alt="mail icon" />
-								<input type="email" id="email" placeholder="Type your email" />
+						<div class="input-container">
+							<div class="inputEmail">
+								<label>E-mail</label>
+								<div class="input-box">
+									<img src="images/mail.svg" alt="mail icon" />
+									<input
+										type="email"
+										id="email"
+										placeholder="Type your email"
+									/>
+								</div>
+							</div>
+
+							<div class="inputPassword">
+								<label>Password</label>
+								<div class="input-box">
+									<img src="images/lock.svg" alt="lock icon" />
+									<input
+										type="password"
+										id="password"
+										placeholder="Type your password"
+									/>
+									<img
+										class="eye-toggle"
+										src="images/eye-slash.svg"
+										alt="toggle password visibility"
+									/>
+								</div>
 							</div>
 						</div>
 
-						<div class="inputPassword">
-							<label>Password</label>
-							<div class="input-box">
-								<img src="images/lock.svg" alt="lock icon" />
-								<input
-									type="password"
-									id="password"
-									placeholder="Type your password"
-								/>
-								<img
-									class="eye-toggle"
-									src="images/eye-slash.svg"
-									alt="toggle password visibility"
-								/>
+						<div class="row remind-me">
+							<div>
+								<input id="checkbox" type="checkbox" />
+								<label for="checkbox" class="checkbox-custom"></label>
+
+								<span class="remind-me-text">Remind me</span>
 							</div>
-						</div>
-					</div>
 
-					<div class="row remind-me">
-						<div>
-							<input id="checkbox" type="checkbox" />
-							<label for="checkbox" class="checkbox-custom"></label>
-
-							<span class="remind-me-text">Remind me</span>
+							<a id="forgot-password" href="">Forgot my password</a>
 						</div>
 
-						<a id="forgot-password" href="">Forgot my password</a>
-					</div>
+						<div class="row">
+							<button type="submit" class="login-btn">LOGIN</button>
+						</div>
 
-					<div class="row">
-						<button type="submit" class="login-btn">LOGIN</button>
-					</div>
-
-					<div class="row noAccount">
-						<p>Don't have an account?</p>
-						<a id="sign-up" href="">Sign up!</a>
-					</div>
-				</form>
+						<div class="row noAccount">
+							<p>Don't have an account?</p>
+							<a id="sign-up" href="">Sign up!</a>
+						</div>
+					</form>
+				</div>
 			</div>
 
 			<div class="right">
