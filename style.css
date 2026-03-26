@@ -239,7 +239,7 @@ label {
 }
 
 /* Responsive */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1100px) {
 	.main {
 		grid-template-columns: 1fr;
 	}
